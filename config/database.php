@@ -52,11 +52,6 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-            'options'   => array(
-                PDO::MYSQL_ATTR_SSL_KEY    => env('DB_CLIENT_KEY', ''),
-                PDO::MYSQL_ATTR_SSL_CERT    => env('DB_CLIENT_CERT', ''),
-                PDO::MYSQL_ATTR_SSL_CA    => env('DB_CA_CERT', ''),
-            ),
         ],
 
         'pgsql' => [
