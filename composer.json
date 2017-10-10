@@ -11,9 +11,8 @@
         "laravel/tinker": "~1.0",
         "lavary/laravel-menu": "^1.6",
         "zizaco/entrust": "5.2.x-dev",
-        "laravelcollective/html":"^5.2.0",
+        "laravelcollective/html":"^5.4.0",
         "owen-it/laravel-auditing": "*",
-        "markhilton/monolog-mysql" : "*",
         "laravelista/lumen-vendor-publish":"*"
     },
     "require-dev": {
