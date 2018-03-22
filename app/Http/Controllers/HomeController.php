@@ -13,7 +13,11 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+
         $this->middleware('auth');
+
+        self::$menuOptions = ['Admin'=> 'admin'];
+        parent::__construct();
     }
 
     /**
@@ -23,6 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         return view('home');
     }
 }

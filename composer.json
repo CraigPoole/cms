@@ -11,9 +11,7 @@
         "laravel/tinker": "~1.0",
         "lavary/laravel-menu": "^1.6",
         "zizaco/entrust": "5.2.x-dev",
-        "laravelcollective/html":"^5.4.0",
-        "owen-it/laravel-auditing": "*",
-        "laravelista/lumen-vendor-publish":"*"
+        "laravelcollective/html":"^5.4.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -25,7 +23,8 @@
         "classmap": [
             "database/seeds",
             "database/factories",
-            "app/traits"
+            "app/traits",
+            "app/models"
         ],
         "psr-4": {
             "App\\": "app/"

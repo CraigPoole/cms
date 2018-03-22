@@ -1,0 +1,83 @@
+.jMenu {
+    display: table;
+    margin: 0;
+    padding: 0
+}
+
+/* First level */
+.jMenu li {
+    display: table-cell;
+    margin: 0;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #D8D8D8;
+}
+
+.jMenu li a {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.jMenu li a .main-menu-title{
+    margin-left: 10px;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+/* Lower levels */
+.jMenu li ul {
+    display: none;
+    position: absolute;
+z-index:9999;
+    padding: 0;
+    margin: 0;
+    padding-top: 23px;
+}
+
+.jMenu li ul li {
+    background-color: #f4f4f4;;
+    display: block;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 0;
+}
+
+.jMenu li ul li.arrow {
+    background-color: #f4f4f4;;
+    background-image: url('../images/arrow_down.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 6px;
+    padding: 0;
+    border-bottom: none;
+    padding-bottom: 10px
+}
+
+.jMenu li ul li a {
+    font-size: 11px;
+    text-transform: none;
+    padding: 7px;
+    display: block;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.jMenu li ul li a.isParent {
+    background-color: #f4f4f4;
+    background-image: url('../images/arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.jMenu li ul li a:hover {
+    background-color: #f4f4f4;
+    color: #2264A7;
+}

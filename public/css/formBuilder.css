@@ -1,0 +1,48 @@
+.fbTable
+{
+    display: table;
+    width: 100%;
+    min-height: 500px;
+}
+.fbRow{
+    display: table-row;
+    min-height: 500px;
+    min-width: 500px;
+}
+
+.gap
+{
+    width: 20px;
+    height: 20px;
+    display: table-cell;
+}
+
+.canvas
+{
+    min-width: 500px;
+    min-height: 500px;
+    border: 1px dotted;
+    display: table-cell;
+}
+
+.toolbar
+{
+    min-width: 100px;
+    min-height: 500px;
+    border: 1px solid;
+    vertical-align: top;
+    display: table-cell;
+    padding: 4px;
+}
+
+.fbElement
+{
+    width: 100%;
+    background-color: #7d7a7a
+}
+
+.fbWidget
+{
+    margin-top: 2px;
+    width: 100%;
+}

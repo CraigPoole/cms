@@ -82,13 +82,16 @@
                     Laravel
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <table class="table-bordered">
+                    <tr><th>Name</th><th>Description</th><td>edit</td></tr>
+                    @foreach($pages as $page)
+                        <td>{{$page['name']}}</td>
+                        <td>{{$page['description']}}</td>
+                        <td><a href="page_edit/{{$page['id']}}">Edit</a></td>
+                        </tr>
+
+                    @endforeach
+                </table>
             </div>
         </div>
     </body>

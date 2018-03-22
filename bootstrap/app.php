@@ -43,7 +43,7 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
-$app->register(OwenIt\Auditing\AuditingServiceProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
