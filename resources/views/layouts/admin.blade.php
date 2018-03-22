@@ -41,18 +41,20 @@
     <!-- /. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">
         <div class="sidebar-collapse">
+
+
             <ul class="nav" id="main-menu">
 
 
-                <li >
+                <li>
                     <a href="/" ><i class="fa fa-desktop "></i>Site</a>
                 </li>
 
 
-                <li>
+                <li @if((Route::current()->getName() == 'admin')) class="active-link" @endif>
                     <a href="/admin"><i class="fa fa-table "></i>Pages</a>
                 </li>
-                <li class="active-link">
+                <li @if((Route::current()->getName() == 'module')) class="active-link" @endif >
                     <a href="/module"><i class="fa fa-edit "></i>Modules</a>
                 </li>
 

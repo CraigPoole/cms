@@ -15,14 +15,18 @@
 Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
+
+Route::middleware(['auth'])->group(function () {
 //Pages
-Route::get('/admin', 'AdminController@index')->name('admin');
-Route::get('/page_edit/{id}', 'AdminController@pageEdit')->name('page_edit');
-Route::get('/page_create', 'AdminController@pageCreate')->name('page_create');
-Route::post('/page_create', 'AdminController@pageCreateSubmit')->name('page_create');
-Route::post('/page_edit/{id}', 'AdminController@pageEditSubmit')->name('page_edit');
+    Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::get('/page_edit/{id}', 'AdminController@pageEdit')->name('page_edit');
+    Route::get('/page_create', 'AdminController@pageCreate')->name('page_create');
+    Route::post('/page_create', 'AdminController@pageCreateSubmit')->name('page_create');
+    Route::post('/page_edit/{id}', 'AdminController@pageEditSubmit')->name('page_edit');
+    Route::get('/module', 'ModuleController@index')->name('module');
+    Route::get('/profile', 'ProfileController@index')->name('profile');
 
-//Modules
-Route::get('/module', 'ModuleController@index')->name('module');
+    Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+});
 
-Route::get('/profile', 'ProfileController@index')->name('profile');
+
